@@ -1,0 +1,186 @@
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #fd405e;
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    background-size: 290px auto;
+    height: 317.5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        background: url(../images/header_girl.png) #fd405e;
+        background-repeat: no-repeat;
+        background-position: 80% 100%;
+        background-size: 290px 270px;
+        height: 350px;
+    }
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header-nav-logo {
+    margin: 10px 0 0 10px;
+
+    p {
+        color: #fff;
+        font-weight: 700;
+        font-size: 37px;
+        text-transform: capitalize;
+    }
+}
+
+.header-nav-menu {
+    width: 40%;
+}
+
+.header-nav-menu-in {
+    display: none;
+}
+
+.header-nav-menu-lab {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    list-style: none;
+    z-index: 2;
+}
+
+.header-nav-menu-in:checked~.header-nav-menu-block {
+    left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-nav-menu-in:checked~.header-nav-menu-block {
+        left: 60%;
+    }
+}
+
+.header-nav-menu-block {
+    background: #fd405e;
+    display: block;
+    position: absolute;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    height: 313px 555px;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1;
+    line-height: 2;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-nav-menu-block {
+        width: 40%;
+        margin: 0 auto;
+        height: 134px;
+    }
+}
+
+.header-nav-menu-block-item {
+    background: #fd405f;
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    padding-top: 258px;
+    width: 100%;
+}
+
+.header-nav-menu-block-login {
+    display: none;
+}
+
+.header-nav-menu-block-loglab {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-nav-menu-block-login:checked ~ .login-in-menu {
+    left: 18%;
+}
+
+.login-in-menu {
+    position: absolute;
+}
+
+.form-in-menu {
+    background: #fd405f;
+    position: absolute;
+    top: 15%;
+    left: -100%;
+    transition: 0.3s all linear;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-nav-menu-block-item {
+        height: 506px;
+    }
+}
+
+.header-nav-menu-block-items {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-slider {
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.header-slider-head {
+    color: #fff;
+
+    p {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    span {
+        font-size: 65px;
+        font-style: italic;
+        display: block;
+        margin-top: -25px;
+    }
+}
+
+.header-slider-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 40px 10px;
+
+    span {
+        position: relative;
+    }
+}
+
+.header-slider-link::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 12px;
+    background: url(../images/arrow.png);
+    left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-slider-link::before {
+        left: 50px;
+    }
+}
