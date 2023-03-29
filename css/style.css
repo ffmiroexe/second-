@@ -17,15 +17,6 @@
   height: 317.5px;
 }
 
-@media only screen and (min-width: 768px) {
-  .header {
-    background: url(../images/header_girl.png) #fd405e;
-    background-repeat: no-repeat;
-    background-position: 80% 100%;
-    background-size: 290px 270px;
-    height: 350px;
-  }
-}
 .header-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -61,11 +52,6 @@
   left: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-nav-menu-in:checked ~ .header-nav-menu-block {
-    left: 60%;
-  }
-}
 .header-nav-menu-block {
   background: #fd405e;
   display: block;
@@ -83,38 +69,32 @@
   line-height: 2;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-nav-menu-block {
-    width: 40%;
-    margin: 0 auto;
-    height: 134px;
-  }
-}
 .header-nav-menu-block-item {
   background: #fd405f;
   position: absolute;
   text-align: center;
   list-style: none;
-  padding-top: 258px;
+  padding-top: 170px;
   width: 100%;
 }
 
-.header-nav-menu-block-login {
+.menu-block-login {
   display: none;
 }
 
-.header-nav-menu-block-loglab {
+.menu-block-loglab {
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
 }
 
-.header-nav-menu-block-login:checked ~ .login-in-menu {
+.menu-block-loglab:checked ~ .login-in-menu {
   left: 18%;
 }
 
 .login-in-menu {
-  position: absolute;
+  left: 100%;
+  display: none;
 }
 
 .form-in-menu {
@@ -125,11 +105,6 @@
   transition: 0.3s all linear;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-nav-menu-block-item {
-    height: 506px;
-  }
-}
 .header-nav-menu-block-items {
   color: #fff;
   text-transform: uppercase;
@@ -163,6 +138,7 @@
   font-size: 14px;
   text-transform: uppercase;
   margin: 40px 10px;
+  position: relative;
 }
 .header-slider-link span {
   position: relative;
@@ -177,8 +153,122 @@
   left: 30px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .header {
+    min-height: 563px;
+    background-size: 500px auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-slider {
+    margin-top: 192px;
+    line-height: 70px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-slider-head p {
+    font-size: 55px;
+  }
+  .header-slider-head span {
+    font-size: 119px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-slider-link {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-nav-logo {
+    padding-top: 25px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-slider-link::before {
+    left: 0px;
+    top: 42px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-nav-menu-block {
+    position: static;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header-nav-menu-block-item {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background: url(../images/header_girl.png) #fd405e;
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    background-size: 290px 270px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-nav-menu-in:checked ~ .header-nav-menu-block {
+    left: 60%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-nav-menu-block {
+    width: 40%;
+    margin: 0 auto;
+    height: 134px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-nav-menu-block-item {
+    height: 506px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .header-slider-link::before {
-    left: 50px;
+    left: 0px;
+  }
+}
+.arrivels {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.arrivels-head {
+  padding: 15px;
+  text-align: center;
+  font-size: 38px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.arrivels-block {
+  margin-bottom: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+.arrivels-block-text {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.arrivels-items {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .arrivels-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
